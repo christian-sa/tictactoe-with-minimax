@@ -15,7 +15,7 @@ The variables can either be "user", "easy", "medium" or "hard".
 **"user"** represents a **human player**, and the other possible variables represent the **difficulty of the AI.**
 If you for example want to play against another friend (PvP) you would type "*start* **user user**".
 For playing against the AI (PvE) either "*start* **user** *difficulty*" or "*start* *difficulty* **user**" (e.g. "*start* **hard user**")
-depending if you want to go first or second.
+depending on if you want to go first or second.
 And lastly if you want to see **AIs battling** each other type "*start difficulty difficulty*" (e.g. "*start* **easy hard**"
 for an easy AI to do the first move and battle a hard AI).
 
@@ -23,7 +23,7 @@ for an easy AI to do the first move and battle a hard AI).
 
 ### Easy
 - Makes a **random** move
-- Any cell can be chosen as long as it's not occupied by a mark (valid move)
+- Any cell can be chosen as long as it's not already occupied by another mark (must be valid move)
 
 ### Medium
 - Tries to **win** if it can accomplish that in **one move** (already 2 in a row by chance)
