@@ -51,7 +51,6 @@ abstract class AI {
                 if (field.available(i, j)) {
                     field.setMark(i, j, markAI);
                     int score = miniMax(ticTacToe, 0, Integer.MIN_VALUE, Integer.MAX_VALUE, false, markAI);
-                    System.out.println(score);
                     field.setMark(i, j, BLANK);
                     bestScore = Math.max(bestScore, score);
                     worstScore = Math.min(worstScore, score);
@@ -85,7 +84,6 @@ abstract class AI {
                 if (field.available(i, j)) {
                     field.setMark(i, j, markAI);
                     int score = miniMax(ticTacToe, 0, Integer.MIN_VALUE, Integer.MAX_VALUE, false, markAI);
-                    System.out.println(score);
                     field.setMark(i, j, BLANK);
                     if (score > bestScore) {
                         bestScore = score;
@@ -97,7 +95,6 @@ abstract class AI {
         }
         field.setMark(move[0], move[1], markAI);
         field.print();
-        System.out.println(bestScore);
     }
 
     /**
